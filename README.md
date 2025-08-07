@@ -1,30 +1,160 @@
-# Frontend with AI Integration
+# CV Formatter Pro - React Application
 
-*Automatically synced with your [v0.dev](https://v0.dev) deployments*
+A professional CV formatting application built with React.js and Tailwind CSS, featuring AI-powered content enhancement and modern UI components.
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/852tutukumargmailcoms-projects/v0-frontend-with-ai-integration)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.dev-black?style=for-the-badge)](https://v0.dev/chat/projects/gczqwql7IuY)
+## 🚀 Features
 
-## Overview
+- **AI-Powered Enhancement**: Integration with GPT-4, Claude, and Gemini AI models
+- **Multi-Format Support**: Upload PDF, DOCX, and Excel files
+- **Professional Formatting**: EHS-compliant CV formatting
+- **Real-time Editing**: Interactive CV editor with live preview
+- **Responsive Design**: Mobile-first design with Tailwind CSS
+- **Pure CSS Animations**: Smooth transitions without external animation libraries
 
-This repository will stay in sync with your deployed chats on [v0.dev](https://v0.dev).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.dev](https://v0.dev).
+## 🛠️ Tech Stack
 
-## Deployment
+- **Frontend**: React.js 18
+- **Build Tool**: Vite
+- **Styling**: Tailwind CSS
+- **Icons**: Lucide React
+- **Language**: JavaScript (ES6+)
 
-Your project is live at:
+## 📦 Installation
 
-**[https://vercel.com/852tutukumargmailcoms-projects/v0-frontend-with-ai-integration](https://vercel.com/852tutukumargmailcoms-projects/v0-frontend-with-ai-integration)**
+1. **Clone the repository**
+   \`\`\`bash
+   git clone <repository-url>
+   cd cv-formatter-react
+   \`\`\`
 
-## Build your app
+2. **Install dependencies**
+   \`\`\`bash
+   npm install
+   \`\`\`
 
-Continue building your app on:
+3. **Start development server**
+   \`\`\`bash
+   npm run dev
+   \`\`\`
 
-**[https://v0.dev/chat/projects/gczqwql7IuY](https://v0.dev/chat/projects/gczqwql7IuY)**
+4. **Build for production**
+   \`\`\`bash
+   npm run build
+   \`\`\`
 
-## How It Works
+## 🎯 Usage
 
-1. Create and modify your project using [v0.dev](https://v0.dev)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+1. **Upload CV**: Drag and drop your CV file (PDF, DOCX, or Excel)
+2. **AI Processing**: Watch as AI agents enhance your content
+3. **Preview & Edit**: Switch between preview and edit modes
+4. **Download**: Export your enhanced CV in multiple formats
+
+## 🎨 Components
+
+### Core Components
+- `HomePage`: Main landing page with features showcase
+- `FileUpload`: Drag-and-drop file upload component
+- `ProcessorPage`: AI processing status and CV management
+- `CVPreview`: Professional CV preview with formatting
+- `CVEditor`: Interactive CV editing interface
+
+### UI Components
+- `Button`: Customizable button component
+- `Card`: Container component for content sections
+- `Input`: Form input component
+- `Textarea`: Multi-line text input
+- `Badge`: Tag/label component
+
+## 🎭 Animations
+
+All animations are implemented using pure Tailwind CSS:
+
+- **Hover Effects**: `hover:scale-105`, `hover:shadow-xl`
+- **Loading States**: `animate-spin`, `animate-pulse`
+- **Transitions**: `transition-all duration-300`
+- **Gradient Backgrounds**: `bg-gradient-to-r`
+
+## 📱 Responsive Design
+
+- **Mobile-first**: Designed for mobile devices first
+- **Breakpoints**: `sm:`, `md:`, `lg:` responsive utilities
+- **Grid Layouts**: Responsive grid systems
+- **Flexible Components**: Adaptive component sizing
+
+## 🔧 Development
+
+### Project Structure
+\`\`\`
+src/
+├── components/
+│   ├── ui/           # Reusable UI components
+│   ├── HomePage.jsx  # Main landing page
+│   ├── FileUpload.jsx
+│   ├── ProcessorPage.jsx
+│   ├── CVPreview.jsx
+│   └── CVEditor.jsx
+├── lib/
+│   └── utils.js      # Utility functions
+├── App.jsx           # Main app component
+├── main.jsx          # App entry point
+└── index.css         # Global styles
+\`\`\`
+
+### Available Scripts
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
+- `npm run lint` - Run ESLint
+
+## 🎨 Styling
+
+The application uses Tailwind CSS with custom design tokens:
+
+- **Colors**: Custom color palette with CSS variables
+- **Typography**: Responsive text sizing
+- **Spacing**: Consistent spacing scale
+- **Shadows**: Layered shadow system
+- **Borders**: Rounded corners and borders
+
+## 🚀 Deployment
+
+### Vercel (Recommended)
+\`\`\`bash
+npm install -g vercel
+vercel --prod
+\`\`\`
+
+### Netlify
+\`\`\`bash
+npm run build
+# Upload dist/ folder to Netlify
+\`\`\`
+
+### GitHub Pages
+\`\`\`bash
+npm run build
+# Deploy dist/ folder to gh-pages branch
+\`\`\`
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- React.js team for the amazing framework
+- Tailwind CSS for the utility-first CSS framework
+- Lucide React for beautiful icons
+- Vite for fast build tooling
+
+---
+
+**Built with ❤️ using React.js and Tailwind CSS**
